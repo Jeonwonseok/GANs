@@ -1,4 +1,4 @@
-# Leading IRL Papers
+# Leading GANs Papers
 This includes some remarkable papers in field of Generative Adversarial Networks
 
 ## Paper list
