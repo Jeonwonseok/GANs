@@ -4,7 +4,11 @@ I follow the ALIEN's posting ["An introduction to Generative Adversarial Network
 The original source code taken from https://github.com/AYLIEN/gan-intro<br/>
 Modify it fit to my development environment.<br/>
 Test video: <br/>
-                           [![Test Video](http://img.youtube.com/vi/G9HOHU0bbfo/0.jpg)](https://youtu.be/G9HOHU0bbfo?t=0s)
+<p align="center">
+  <a href="https://youtu.be/G9HOHU0bbfo?t=0s">
+  <img src="http://img.youtube.com/vi/G9HOHU0bbfo/0.jpg" alt="Test Video"/>
+  </a>
+</p>
 <br/>
 I attatch some explanation about the code "gan_intro.py", refer to "GAN_intro.pdf"<br/>
 
