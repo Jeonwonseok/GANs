@@ -4,7 +4,11 @@ I follow the ALIEN's posting ["An introduction to Generative Adversarial Network
 The original source code taken from https://github.com/AYLIEN/gan-intro<br/>
 Modify it fit to my development environment.<br/>
 Test video: https://youtu.be/G9HOHU0bbfo <br/>
-I attatch some explanation about the code "gan_intro.py", refer to "GAN_intro.pdf"
+![Test Video](http://img.youtube.com/vi/G9HOHU0bbfo/0.jpg)
+<br/>
+![Test Video](https://www.youtube.com/watch?v=G9HOHU0bbfo)
+<br/>
+I attatch some explanation about the code "gan_intro.py", refer to "GAN_intro.pdf"<br/>
 
 ## Requirements
 - python 3.5.2
