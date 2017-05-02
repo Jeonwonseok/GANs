@@ -9,7 +9,7 @@ Test video:
   <img src="http://img.youtube.com/vi/G9HOHU0bbfo/0.jpg" alt="Test Video"/>
   </a>
 </p>
-I attatch some explanation about the code "gan_intro.py", refer to "GAN_intro.pdf"<br/>
+I attatch some explanation about the code ["gan_intro.py"](https://github.com/Jeonwonseok/GANs/blob/master/Codes/GAN_intro/gan_intro.py), refer to ["GAN_intro.pdf"](https://github.com/Jeonwonseok/GANs/blob/master/Codes/GAN_intro/GAN_intro.pdf)<br/>
 
 ## Requirements
 - python 3.5.2
