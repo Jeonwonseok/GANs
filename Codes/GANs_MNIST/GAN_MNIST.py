@@ -100,7 +100,7 @@ class GAN_MNIST(object):
 
         self.learning_rate = 0.03
         # Generator hyperparameter
-        self.input_size = 100
+        self.input_size = 20
         self.h_dim = [512, 256, 400]
         # Discriminator hyperparameter
         self.d_h_dim = [32, 64]
