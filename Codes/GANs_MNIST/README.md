@@ -3,28 +3,20 @@
 GANs learn how to generate the numbers with MNIST<br/>
 The Generator and Discriminator are fully connected network with one hidden layers.<br/>
 
-Test result video:
+[Test result video](https://youtu.be/RV1_hmNfEOA?t=0s)
 <p align="center">  
   <a href="https://youtu.be/RV1_hmNfEOA?t=0s">
-  <img src="http://img.youtube.com/vi/M7Lf8PKxnJk/0.jpg" width="400" alt="GANs MNIST 3"/>
-  </a>
-  <a href="https://youtu.be/3KJwGgXxgj0?t=0s">
-  <img src="http://img.youtube.com/vi/3KJwGgXxgj0/0.jpg" width="400" alt="GANs MNIST 4"/>
-  </a>
-  <a href="https://youtu.be/dcX7ZWR0iPQ?t=0s">
-  <img src="http://img.youtube.com/vi/dcX7ZWR0iPQ/0.jpg" width="400" alt="GANs MNIST 5"/>
-  </a>
-  <a href="https://youtu.be/222ffugJrgk?t=0s">
-  <img src="http://img.youtube.com/vi/222ffugJrgk/0.jpg" width="400" alt="GANs MNIST 6"/>
-  </a>
-  <a href="https://youtu.be/mLB_v6ok3kc?t=0s">
-  <img src="http://img.youtube.com/vi/mLB_v6ok3kc/0.jpg" width="400" alt="GANs MNIST 7"/>
-  </a>
-  <a href="https://youtu.be/5HARnSJoA3M?t=0s">
-  <img src="http://img.youtube.com/vi/5HARnSJoA3M/0.jpg" width="400" alt="GANs MNIST 8"/>
-  </a>
-  <a href="https://youtu.be/_Jj1wygrHGw?t=0s">
-  <img src="http://img.youtube.com/vi/_Jj1wygrHGw/0.jpg" width="400" alt="GANs MNIST 9"/>
+  <img src="https://github.com/Jeonwonseok/GANs/blob/master/Codes/GANs_MNIST/img/000.png?raw=true" width="400" alt="GANs MNIST 000"/>
+  <img src="https://github.com/Jeonwonseok/GANs/tree/master/Codes/GANs_MNIST/img/100.png?raw=true" width="400" alt="GANs MNIST 100"/>
+  <img src="https://github.com/Jeonwonseok/GANs/tree/master/Codes/GANs_MNIST/img/200.png?raw=true" width="400" alt="GANs MNIST 200"/>
+  <img src="https://github.com/Jeonwonseok/GANs/tree/master/Codes/GANs_MNIST/img/300.png?raw=true" width="400" alt="GANs MNIST 300"/>
+  <img src="https://github.com/Jeonwonseok/GANs/tree/master/Codes/GANs_MNIST/img/400.png?raw=true" width="400" alt="GANs MNIST 400"/>
+  <img src="https://github.com/Jeonwonseok/GANs/tree/master/Codes/GANs_MNIST/img/500.png?raw=true" width="400" alt="GANs MNIST 500"/>
+  <img src="https://github.com/Jeonwonseok/GANs/tree/master/Codes/GANs_MNIST/img/600.png?raw=true" width="400" alt="GANs MNIST 600"/>
+  <img src="https://github.com/Jeonwonseok/GANs/tree/master/Codes/GANs_MNIST/img/700.png?raw=true" width="400" alt="GANs MNIST 700"/>
+  <img src="https://github.com/Jeonwonseok/GANs/tree/master/Codes/GANs_MNIST/img/800.png?raw=true" width="400" alt="GANs MNIST 800"/>
+  <img src="https://github.com/Jeonwonseok/GANs/tree/master/Codes/GANs_MNIST/img/900.png?raw=true" width="400" alt="GANs MNIST 900"/>
+  <img src="https://github.com/Jeonwonseok/GANs/tree/master/Codes/GANs_MNIST/img/999.png?raw=true" width="400" alt="GANs MNIST 999"/>
   </a>
 </p>
 
