@@ -1,21 +1,11 @@
 # GANs generate numbers with MNIST
 
 GANs learn how to generate the numbers with MNIST<br/>
-The Generator is fully connected network with three hidden layers.<br/>
-The Discriminator is convolutional neural network with two convolution layer and one fully connected layer.<br/>
+The Generator and Discriminator are fully connected network with one hidden layers.<br/>
 
-Test result videos:
-<p align="center">
-  <a href="https://youtu.be/IggAMiEbX44?t=0s">
-  <img src="http://img.youtube.com/vi/IggAMiEbX44/0.jpg" width="400" alt="GANs MNIST 0"/>
-  </a>
-  <a href="https://youtu.be/SLtjCB75T8U?t=0s">
-  <img src="http://img.youtube.com/vi/SLtjCB75T8U/0.jpg" width="400" alt="GANs MNIST 1"/>
-  </a>
-  <a href="https://youtu.be/XN_6b2CJ3y4?t=0s">
-  <img src="http://img.youtube.com/vi/XN_6b2CJ3y4/0.jpg" width="400" alt="GANs MNIST 2"/>
-  </a>
-  <a href="https://youtu.be/M7Lf8PKxnJk?t=0s">
+Test result video:
+<p align="center">  
+  <a href="https://youtu.be/RV1_hmNfEOA?t=0s">
   <img src="http://img.youtube.com/vi/M7Lf8PKxnJk/0.jpg" width="400" alt="GANs MNIST 3"/>
   </a>
   <a href="https://youtu.be/3KJwGgXxgj0?t=0s">
