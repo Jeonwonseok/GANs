@@ -12,3 +12,4 @@ Generative Adversarial Networks
 [Codes](https://github.com/Jeonwonseok/GANs/tree/master/Codes) includes some useful GANs codes developed by brilliant researchers and some of them created and edited by me
 - [GANs intro](https://github.com/Jeonwonseok/GANs/tree/master/Codes/GAN_intro) - 1D Gaussian Distribution Approximation
 - [GANs MNIST](https://github.com/Jeonwonseok/GANs/tree/master/Codes/GANs_MNIST) - Generate the Numbers
+- [DCGAN MNIST](https://github.com/Jeonwonseok/GANs/tree/master/Codes/DCGAN_MNIST) - DCGAN with MNIST
