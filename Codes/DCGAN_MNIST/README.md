@@ -1,4 +1,4 @@
-# DCGAN
+# DCGAN with MNIST
 ## Deep Convolutional Generative Adversarial Networks
 
 DCGAN learn how to generate the numbers with MNIST<br/>
@@ -28,7 +28,7 @@ The Generator is fractionally-strided convolutions and the discriminator is stri
 - Test results:<br/>
 **Can you figure out which side(left half or right half) is real human writings?**
 <p align="center">  
-  <img src="https://raw.githubusercontent.com/Jeonwonseok/GANs/master/Codes/DCGAN/Result_cond/999.png" width="600" alt="DCGAN MNIST"/>  
+  <img src="https://raw.githubusercontent.com/Jeonwonseok/GANs/master/Codes/DCGAN_MNIST/Result_cond/999.png" width="600" alt="DCGAN MNIST"/>  
 </p>
 
 ## Requirements
