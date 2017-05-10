@@ -1,31 +1,34 @@
-# GANs generate numbers with MNIST
+# DCGAN
+## Deep Convolutional Generative Adversarial Networks
 
-GANs learn how to generate the numbers with MNIST<br/>
-The Generator and Discriminator are fully connected network with one hidden layers.<br/>
+DCGAN learn how to generate the numbers with MNIST<br/>
+DCGAN can generate the numbers with conditioning vector(e.g. lables) or without conditioning vector.<br/> 
+The Generator is fractionally-strided convolutions and the discriminator is strided convolution.<br/>
 
-Test result video:
+- References:
+  - Original Paper: [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)
+  - Authors' Demo Code: https://github.com/Newmu/dcgan_code
+  - TensorFlow implementaion codes:
+    - https://github.com/carpedm20/DCGAN-tensorflow
+    - https://github.com/yihui-he/GAN-MNIST
+    - https://github.com/bamos/dcgan-completion.tensorflow
+  - Blog Postings:
+    - https://blog.openai.com/generative-models/
+    - http://bamos.github.io/2016/08/09/deep-completion/
+    - http://jaejunyoo.blogspot.com/2017/02/deep-convolutional-gan-dcgan-1.html
+    
+- References about Conditional Generative Adversarial Nets:
+  - Original Paper: [Conditional Generative Adversarial Nets](https://arxiv.org/abs/1411.1784)
+  - TensorFlow implementation codes:
+    - https://github.com/wiseodd/generative-models/tree/master/GAN/conditional_gan
+    - https://github.com/golbin/TensorFlow-Tutorials/blob/master/04%20-%20Autoencoder%2C%20GAN/03%20-%20GAN2.py
+  - Blog Postings:
+    - http://wiseodd.github.io/techblog/2016/12/24/conditional-gan-tensorflow/
+
+- Test results:<br/>
+**Can you figure out which side(left half or right half) is real human writings?**
 <p align="center">  
-  <a href="https://youtu.be/RV1_hmNfEOA?t=0s">
-  <img src="http://img.youtube.com/vi/M7Lf8PKxnJk/0.jpg" width="400" alt="GANs MNIST 3"/>
-  </a>
-  <a href="https://youtu.be/3KJwGgXxgj0?t=0s">
-  <img src="http://img.youtube.com/vi/3KJwGgXxgj0/0.jpg" width="400" alt="GANs MNIST 4"/>
-  </a>
-  <a href="https://youtu.be/dcX7ZWR0iPQ?t=0s">
-  <img src="http://img.youtube.com/vi/dcX7ZWR0iPQ/0.jpg" width="400" alt="GANs MNIST 5"/>
-  </a>
-  <a href="https://youtu.be/222ffugJrgk?t=0s">
-  <img src="http://img.youtube.com/vi/222ffugJrgk/0.jpg" width="400" alt="GANs MNIST 6"/>
-  </a>
-  <a href="https://youtu.be/mLB_v6ok3kc?t=0s">
-  <img src="http://img.youtube.com/vi/mLB_v6ok3kc/0.jpg" width="400" alt="GANs MNIST 7"/>
-  </a>
-  <a href="https://youtu.be/5HARnSJoA3M?t=0s">
-  <img src="http://img.youtube.com/vi/5HARnSJoA3M/0.jpg" width="400" alt="GANs MNIST 8"/>
-  </a>
-  <a href="https://youtu.be/_Jj1wygrHGw?t=0s">
-  <img src="http://img.youtube.com/vi/_Jj1wygrHGw/0.jpg" width="400" alt="GANs MNIST 9"/>
-  </a>
+  <img src="https://raw.githubusercontent.com/Jeonwonseok/GANs/master/Codes/DCGAN/Result_cond/999.png" width="600" alt="DCGAN MNIST"/>  
 </p>
 
 ## Requirements
