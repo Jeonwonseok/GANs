@@ -177,8 +177,7 @@ def noise_sample(batch_size, input_size):
 
 def input_sample(batch_size, data):
     batch_size = batch_size//6
-    # input = np.random.choice(data, batch_size)
-    input = np.concatenate([input, np.random.choice(data[:1100], batch_size)])
+    input = np.random.choice(data[:1100], batch_size)
     input = np.concatenate([input, np.random.choice(data[1100:2200], batch_size)])
     input = np.concatenate([input, np.random.choice(data[2200:3300], batch_size)])
     input = np.concatenate([input, np.random.choice(data[3300:4400], batch_size)])
