@@ -376,13 +376,14 @@ class GAN_MNIST(object):
         print("Video Saved")
 
 def main():
-    model = GAN_MNIST(
-        10000,  # training iteration steps
-        90,  # batch size
-        10,  # log step
-        'Test.mp4'  # animation path
-    )
-    model.train()
+    with tf.device('/cpu:0'):
+        model = GAN_MNIST(
+            10000,  # training iteration steps
+            90,  # batch size
+            10,  # log step
+            'Test.mp4'  # animation path
+        )
+        model.train()
 
 if __name__ == '__main__':
     main()
