@@ -155,8 +155,10 @@ def generator(i_sn, output_size, batch_size, h_dim):
     stddev = 0.02
     c_dim = 1
 
-    with tf.variable_scope("Feature") as scope:
-        feature = Feature_extractor(i_sn)
+    h0 = lrelu(conv(filter_size, i_sn, 16, strides=strides, scope='f_h0', stddev=stddev))
+    # Layer 1
+    fbn_1 = batch_norm(name='fbn_1')
+    feature = lrelu(fbn_1(conv(filter_size, h0, 32, strides=strides, scope='f_h1', stddev=stddev)))
 
     # Layer 0
     gbn_0 = batch_norm(name='gbn_0')
@@ -267,15 +269,12 @@ class GAN_MNIST(object):
         self.i_sn_ = tf.placeholder(tf.float32, [1, self.output_size, self.output_size, 1])
         self.x = tf.placeholder(tf.float32, self.data_size)
 
-        with tf.variable_scope('Feature') as feature_scope:
-            _ = Feature_extractor(self.i_sn)
-
         with tf.variable_scope('Pre') as pre_scope:
-            with tf.variable_scope(feature_scope, reuse=True):
+            with tf.variable_scope('Feature') as feature_scope:
                 self.feature_x = Feature_extractor(self.x)
+                feature_scope.reuse_variables()
+                self.feature_i_sn = Feature_extractor(self.i_sn)
             self.Pre1_logits = Feature_extractor_pre(self.feature_x)
-            feature_scope.reuse_variables()
-            self.feature_i_sn = Feature_extractor(self.i_sn)
             pre_scope.reuse_variables()
             self.Pre2_logits = Feature_extractor_pre(self.feature_i_sn)
 
@@ -302,6 +301,7 @@ class GAN_MNIST(object):
 
         # Trainable Variables
         self.pre_params = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope='Pre')
+        self.pre_params_feature = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope='Pre/Feature')
         self.d_params = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope='Dis')
         self.g_params = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope='Gen')
 
@@ -333,6 +333,15 @@ class GAN_MNIST(object):
 
                 if step % self.log_every == 0:
                     print('{}: {}'.format(step, loss_pre))
+
+            self.weights = sess.run(self.pre_params_feature)
+            w_len = len(self.weights)
+
+            for i, v in enumerate(self.g_params):
+                if (i==w_len):
+                    break
+                sess.run(v.assign(self.weights[i]))
+            print('transfered')
 
             for step in range(self.num_steps):
                 # set random seed as step
